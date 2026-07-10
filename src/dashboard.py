@@ -132,7 +132,7 @@ def update_dashboard(n):
     last_updated = f"Last updated: {datetime.now(timezone.utc).strftime('%H:%M:%S')} UTC"
 
     #calculate metric card values
-    total = len(recent)
+    total = sum(s["count"] for s in summary)
     critical = next((s["count"] for s in summary if s["threat_level"] == "Critical"), 0)
     medium = next((s["count"] for s in summary if s["threat_level"] == "Medium"), 0)
     low = next((s["count"] for s in summary if s["threat_level"] == "Low"), 0)
