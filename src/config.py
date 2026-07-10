@@ -39,8 +39,8 @@ TEST_SIZE = 0.2     #proportion of data held back for testing the model
 
 #-----thresholds-----
 #these convert the model's raw 0-1 score into a threat level
-CRITICAL_THRESHOLD = 0.80
-MEDIUM_THRESHOLD = 0.60
+CRITICAL_THRESHOLD = 0.70
+MEDIUM_THRESHOLD = 0.55
 LOW_THRESHOLD = 0.40
 
 #-----port risk levels-----
