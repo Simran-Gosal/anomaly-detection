@@ -6,3 +6,4 @@ logs/
 *.joblib
 .DS_Store
 data/
+anomalies.db
